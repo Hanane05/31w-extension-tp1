@@ -62,4 +62,27 @@
 .carrousel__fermeture {
   z-index: 9;
   position: absolute;
+}
+
+.carrousel__nav__gauche, .carrousel__nav__droite {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  padding: 0;
+  background: white;
+  transform: translate(0, -50%);
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  opacity: 0.6;
+  left: 5px;
+}
+
+.carrousel__nav__droite {
+  left: initial;
+  right: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -30,9 +30,11 @@ add_action('wp_enqueue_scripts', "carrousel_31w_enqueue");
 function genere_carrousel(){
     ///////////////////////////////HTML
     $contenu = '<div class="carrousel">';
+    $contenu .= '<label class="carrousel__nav__gauche"><</label>';
     $contenu .= '<button class="carrousel__fermeture">X</button>';
     $contenu .= '<figure class="carrousel__figure"></figure>';
     $contenu .= '<form class="carrousel__radio"></form>';
+    $contenu .= '<label class="carrousel__nav__droite">></label>';
     $contenu .= '</div> <!-- fin du carrousel -->';
     return $contenu;
 
