@@ -1,11 +1,33 @@
 (function(){
     console.log('Début du carrousel')
-   
+    
     let elmGalerie = document.querySelector('.galerie')
     let elmGalerieImg = elmGalerie.querySelectorAll("figure figure img")
     let elmCarrousel = document.querySelector('.carrousel')
     let elmCarrousel__figure = document.querySelector('.carrousel__figure')
     let elmCarrousel__fermeture = document.querySelector('.carrousel__fermeture')
+    
+    let elmCarrousel__nav__gauche = document.querySelector('.carrousel__nav__gauche')
+    let elmCarrousel__nav__droite = document.querySelector('.carrousel__nav__droite')
+    elmCarrousel__nav__droite.addEventListener('mousedown', function(e){  
+            next_index = +index+1;
+            if(elmCarrousel__radio.children.length <= next_index){
+             next_index = 0
+            }
+        elmCarrousel__radio.children[next_index].dispatchEvent(new Event('mousedown'));
+     })
+
+     elmCarrousel__nav__gauche.addEventListener('mousedown', function(e){  
+        
+            next_index = +index-1;
+        if(next_index< 0 ){
+         next_index = elmCarrousel__radio.children.length - 1
+        }
+
+
+        elmCarrousel__radio.children[next_index].dispatchEvent(new Event('mousedown'));
+     })
+
     let elmCarrousel__radio = document.querySelector('.carrousel__radio')
     console.log(elmGalerieImg[0].getAttribute('src'))
     let index = 0
