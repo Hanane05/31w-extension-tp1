@@ -29,12 +29,11 @@ add_action('wp_enqueue_scripts', "carrousel_31w_enqueue");
 
 function genere_carrousel(){
     ///////////////////////////////HTML
-    $contenu = '<div class="carrousel"';
+    $contenu = '<div class="carrousel">';
     $contenu .= '<button class="carrousel__fermeture">X</button>';
-    $contenu .= '<figure class="carrousel__img"></figure>';
+    $contenu .= '<figure class="carrousel__figure"></figure>';
     $contenu .= '<form class="carrousel__radio"></form>';
-    $contenu .= '</div>';
-    $contenu .= '<button id="mon_bouton">OK</button>';
+    $contenu .= '</div> <!-- fin du carrousel -->';
     return $contenu;
 
 }
