@@ -9,7 +9,7 @@
     let elmCarrousel__radio = document.querySelector('.carrousel__radio')
     console.log(elmGalerieImg[0].getAttribute('src'))
     let index = 0
-    
+    let ancien_index = -1
     
     for (const img of elmGalerieImg){
         ajouter_elmImg(img)
@@ -38,8 +38,13 @@
         elmRadio.dataset.index = index++
         elmCarrousel__radio.appendChild(elmRadio)
         elmRadio.addEventListener('mousedown',function(){
+
+            if (ancien_index !== -1){
+                elmCarrousel__figure.children[ancien_index].classList.remove('carrousel__figure__img--activer')
+            }
             
             elmCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer')
+            ancien_index = this.dataset.index
         })
     }
     
