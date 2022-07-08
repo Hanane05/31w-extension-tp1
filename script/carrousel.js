@@ -34,7 +34,7 @@
     {
         let elmRadio = document.createElement('input')
         elmRadio.setAttribute('type', 'radio')
-        elmRadio.setAttribute('name', 'radio')
+        elmRadio.setAttribute('name', 'radImg')
         elmRadio.dataset.index = index++
         elmCarrousel__radio.appendChild(elmRadio)
         elmRadio.addEventListener('mousedown',function(){

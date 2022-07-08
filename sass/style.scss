@@ -34,12 +34,14 @@
     width: 100%;
     height: 100%;
     opacity:0;
-    transition: all 1s;
+    transition: opacity 1s, transform 1s;
 
 }
 
+// ajouter des codes 
 .carrousel__figure__img--activer{
     opacity: 1;
+    
 }
 .carrousel__radio{
     position:absolute;
