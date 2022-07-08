@@ -57,4 +57,9 @@
 .carrousel__radio input {
   margin: 10px;
   display: block;
+}
+
+.carrousel__fermeture {
+  z-index: 9;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
