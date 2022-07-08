@@ -10,13 +10,17 @@
     console.log(elmGalerieImg[0].getAttribute('src'))
     let index = 0
     let ancien_index = -1
+    compteur = 0
     
     for (const img of elmGalerieImg){
+        img.dataset.index = compteur++
         ajouter_elmImg(img)
         ajouter_elmRadio()
         
         img.addEventListener('mousedown',function(){
         elmCarrousel.classList.add('carrousel__ouvrir')
+        index = this.dataset.index
+        affiche_carrousel_img()
     })
     }
 
@@ -38,14 +42,18 @@
         elmRadio.dataset.index = index++
         elmCarrousel__radio.appendChild(elmRadio)
         elmRadio.addEventListener('mousedown',function(){
-
-            if (ancien_index !== -1){
-                elmCarrousel__figure.children[ancien_index].classList.remove('carrousel__figure__img--activer')
-            }
-            
-            elmCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer')
-            ancien_index = this.dataset.index
+            index = this.dataset.index
+            affiche_carrousel_img()
         })
+    }
+
+    function affiche_carrousel_img(){
+        if (ancien_index !== -1){
+            elmCarrousel__figure.children[ancien_index].classList.remove('carrousel__figure__img--activer')
+        }
+        
+        elmCarrousel__figure.children[index].classList.add('carrousel__figure__img--activer')
+        ancien_index = index
     }
     
     
