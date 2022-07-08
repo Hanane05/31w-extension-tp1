@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Caroussel
+ * Plugin Name: Carrousel
  * Author: Hanane Boukhalfa
- * Description: Carrousel d'image créé à partir d'une galerie
+ * Description: Carrousel d'images créé à partir d'une galerie
  * Plugin URI: https://github.com/Hanane05/31w-extension-tp1
  */
 
