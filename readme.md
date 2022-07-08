@@ -1,6 +1,6 @@
 # Exercice - 3
 ##  extension Wordpress Carrousel
-### Contient 13 commits
+### Contient 15 commits
 
 
 > L'extension conient 2 dossiers:
