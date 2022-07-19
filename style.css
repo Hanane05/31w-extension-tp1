@@ -6,7 +6,7 @@
   transform: scale(0);
   transition: all 1s;
   background-color: lightpink;
-  z-index: 9;
+  z-index: 999999999999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -32,7 +32,7 @@
   top: 0;
 }
 
-.carrousel__figure__img {
+.carrousel__figure .carrousel__figure__img {
   position: absolute;
   object-fit: cover;
   width: 100%;
@@ -41,7 +41,7 @@
   transition: opacity 1s, transform 1s;
 }
 
-.carrousel__figure__img--activer {
+.carrousel__figure .carrousel__figure__img--activer {
   opacity: 1;
 }
 
@@ -78,6 +78,7 @@
   left: 1rem;
   font-weight: bold;
   font-family: arial;
+  cursor: pointer;
 }
 
 .carrousel__nav__gauche, .carrousel__nav__droite {
