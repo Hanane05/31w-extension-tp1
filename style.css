@@ -12,7 +12,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 @media screen and (min-width: 700px) {
   .carrousel {
     width: 75vw;
@@ -33,7 +32,6 @@
   margin: 0;
   top: 0;
 }
-
 .carrousel__figure .carrousel__figure__img {
   position: absolute;
   object-fit: cover;
@@ -42,7 +40,6 @@
   opacity: 0;
   transition: opacity 1s, transform 1s;
 }
-
 .carrousel__figure .carrousel__figure__img--activer {
   opacity: 1;
 }
@@ -55,7 +52,6 @@
   justify-content: center;
   width: 100%;
 }
-
 .carrousel__radio input {
   margin: 10px;
   display: block;
@@ -97,7 +93,7 @@
   align-items: center;
   width: 3rem;
   height: 3rem;
-  opacity: .6;
+  opacity: 0.6;
   left: 9px;
   font-size: 1.5rem;
   cursor: pointer;
@@ -110,5 +106,4 @@
 
 .wp-block-image {
   cursor: pointer;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
