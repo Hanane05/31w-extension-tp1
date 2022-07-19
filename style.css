@@ -63,7 +63,7 @@
   all: unset;
   z-index: 9;
   position: absolute;
-  background-color: #0038dd;
+  background-color: #ff6649;
   color: white;
   padding: 1rem;
   border-radius: 50%;
@@ -75,6 +75,8 @@
   height: 1.5rem;
   top: 1rem;
   left: 1rem;
+  font-weight: bold;
+  font-family: arial;
 }
 
 .carrousel__nav__gauche, .carrousel__nav__droite {
