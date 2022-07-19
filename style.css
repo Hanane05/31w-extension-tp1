@@ -57,6 +57,7 @@
 .carrousel__radio input {
   margin: 10px;
   display: block;
+  cursor: pointer;
 }
 
 .carrousel__fermeture {
