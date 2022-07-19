@@ -1,27 +1,27 @@
 .carrousel {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
   opacity: 0;
   transform: scale(0);
   transition: all 1s;
   background-color: lightpink;
   z-index: 9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 @media screen and (min-width: 700px) {
   .carrousel {
     width: 75vw;
     height: 75vh;
-    top: 25vw;
-    left: 25vh;
   }
 }
 
 .carrousel__ouvrir {
   opacity: 1;
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .carrousel__figure {
@@ -78,11 +78,12 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  opacity: 0.6;
+  opacity: .6;
   left: 9px;
 }
 
 .carrousel__nav__droite {
   left: initial;
   right: 9px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
