@@ -60,8 +60,21 @@
 }
 
 .carrousel__fermeture {
+  all: unset;
   z-index: 9;
   position: absolute;
+  background-color: #0038dd;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 1rem;
+  left: 1rem;
 }
 
 .carrousel__nav__gauche, .carrousel__nav__droite {
@@ -76,14 +89,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   opacity: .6;
   left: 9px;
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .carrousel__nav__droite {
   left: initial;
   right: 9px;
+}
+
+.wp-block-image {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
